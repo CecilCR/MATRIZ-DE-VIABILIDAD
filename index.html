@@ -20,7 +20,6 @@
   }
   body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--fondo);color:var(--gris-oscuro);min-height:100vh;padding:0}
 
-  /* HEADER */
   .header{background:var(--azul);padding:2rem 2.5rem 1.5rem;color:#fff;display:flex;justify-content:space-between;align-items:center;}
   .header-content{flex:1}
   .header-eyebrow{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;opacity:0.65;margin-bottom:6px}
@@ -29,30 +28,25 @@
   .header-actions{display:flex;gap:8px;align-items:center}
   .btn-header{background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.3);padding:6px 12px;border-radius:6px;font-size:12px;cursor:pointer;transition:all 0.2s}
   .btn-header:hover{background:rgba(255,255,255,0.25)}
-  .status-indicator{font-size:12px;color:rgba(255,255,255,0.7);padding:0 10px}
+  .status-indicator{font-size:12px;color:rgba(255,255,255,0.9);padding:0 10px;font-weight:500}
 
-  /* STEPPER */
   .stepper{background:var(--azul-med);padding:0 2.5rem;display:flex;gap:0;overflow-x:auto}
-  .step-btn{flex:1;min-width:80px;padding:12px 8px 10px;text-align:center;font-size:11px;color:rgba(255,255,255,0.55);cursor:pointer;border-bottom:3px solid transparent;transition:all 0.2s;white-space:nowrap}
-  .step-btn:hover{color:rgba(255,255,255,0.85)}
+  .step-btn{flex:1;min-width:80px;padding:12px 8px 10px;text-align:center;font-size:11px;color:rgba(255,255,255,0.65);cursor:pointer;border-bottom:3px solid transparent;transition:all 0.2s;white-space:nowrap}
+  .step-btn:hover{color:rgba(255,255,255,0.95);border-bottom-color:rgba(255,255,255,0.5)}
   .step-btn.active{color:#fff;border-bottom-color:#fff;font-weight:500}
   .step-btn.done{color:rgba(255,255,255,0.75);border-bottom-color:rgba(255,255,255,0.3)}
   .step-num{display:block;font-size:16px;font-weight:600;margin-bottom:2px}
 
-  /* MAIN */
   .main{max-width:820px;margin:0 auto;padding:2rem 2rem 4rem}
 
-  /* CARDS */
   .card{background:var(--blanco);border-radius:var(--radio-lg);border:1px solid var(--gris-borde);padding:1.5rem;margin-bottom:1rem;box-shadow:var(--sombra)}
   .card-title{font-size:15px;font-weight:600;color:var(--azul);margin-bottom:4px}
   .card-desc{font-size:13px;color:var(--gris-med);margin-bottom:1.25rem;line-height:1.6}
 
-  /* FORMS */
   label.lbl{font-size:12px;font-weight:500;color:var(--gris-med);display:block;margin-bottom:5px;text-transform:uppercase;letter-spacing:0.05em}
   label.lbl.required::after{content:' *';color:var(--rojo)}
   input[type=text],textarea,select{width:100%;padding:9px 12px;font-size:14px;color:var(--gris-oscuro);background:var(--blanco);border:1px solid var(--gris-borde);border-radius:var(--radio);font-family:inherit;transition:all 0.15s}
   input[type=text]:focus,textarea:focus,select:focus{outline:none;border-color:var(--azul-med);box-shadow:0 0 0 3px rgba(43,82,128,0.1)}
-  input[type=text].error,textarea.error,select.error{border-color:var(--rojo);box-shadow:0 0 0 3px rgba(163,45,45,0.1)}
   textarea{min-height:64px;resize:vertical;line-height:1.6}
   .field{margin-bottom:14px}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
@@ -60,18 +54,15 @@
   .field-error{font-size:11px;color:var(--rojo);margin-top:4px;display:none}
   .field.has-error .field-error{display:block}
 
-  /* STEP PANELS */
   .panel{display:none}
   .panel.active{display:block}
 
-  /* CRITERIOS */
   .crit-catalog{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
   .crit-chip{border:1px solid var(--gris-borde);border-radius:var(--radio);padding:10px 12px;cursor:pointer;transition:all 0.15s;background:var(--blanco)}
   .crit-chip:hover{border-color:var(--azul-borde);background:var(--azul-claro)}
   .crit-chip.selected{border-color:var(--azul-med);background:var(--azul-claro)}
   .crit-chip-name{font-size:13px;font-weight:600;color:var(--gris-oscuro);margin-bottom:2px}
   .crit-chip-desc{font-size:11px;color:var(--gris-med);line-height:1.4}
-  .crit-chip-q{font-size:11px;color:var(--azul-med);margin-top:3px;font-style:italic}
   .crit-selected-list{margin-top:12px;display:flex;flex-direction:column;gap:8px}
   .crit-selected-item{display:grid;grid-template-columns:1fr 80px 28px;gap:8px;align-items:center;background:var(--azul-claro);border:1px solid var(--azul-borde);border-radius:var(--radio);padding:8px 10px}
   .crit-name-tag{font-size:13px;font-weight:500;color:var(--azul)}
@@ -82,8 +73,6 @@
   .peso-ok{background:var(--verde-claro);color:var(--verde)}
   .peso-err{background:var(--rojo-claro);color:var(--rojo)}
 
-  /* EVAL TABLE */
-  .eval-section{margin-bottom:1rem}
   .eval-intro{background:var(--ambar-claro);border:1px solid var(--ambar-borde);border-radius:var(--radio);padding:12px 14px;margin-bottom:14px;font-size:13px;color:var(--ambar);line-height:1.6}
   .eval-intro strong{font-weight:600;display:block;margin-bottom:3px;color:var(--gris-oscuro)}
   .scale-legend{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
@@ -96,8 +85,6 @@
 
   .eval-table{width:100%;border-collapse:collapse;font-size:13px;table-layout:fixed}
   .eval-table th{background:var(--azul);color:#fff;padding:9px 10px;text-align:left;font-weight:500;font-size:12px}
-  .eval-table th:first-child{width:130px;border-radius:8px 0 0 0}
-  .eval-table th:last-child{text-align:center;border-radius:0 8px 0 0}
   .eval-table td{padding:9px 10px;border-bottom:1px solid var(--gris-borde);vertical-align:middle}
   .eval-table tr:last-child td{border-bottom:none}
   .eval-table tr:nth-child(even) td{background:#FAFAF8}
@@ -108,8 +95,6 @@
   .badge-b{background:var(--verde-claro);color:var(--verde)}
   .badge-c{background:var(--ambar-claro);color:var(--ambar)}
 
-  /* RESULTS */
-  .results-bar-wrap{margin-top:14px}
   .result-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
   .result-label{width:130px;font-size:13px;font-weight:500;flex-shrink:0}
   .result-bar-bg{flex:1;height:10px;background:var(--gris-claro);border-radius:5px;overflow:hidden}
@@ -120,18 +105,14 @@
   .result-score{width:44px;font-size:13px;font-weight:700;text-align:right;flex-shrink:0}
   .winner-badge{font-size:11px;background:var(--verde-claro);color:var(--verde);padding:2px 8px;border-radius:20px;font-weight:600;margin-left:4px}
 
-  /* PITCH */
   .pitch-block{border-left:3px solid var(--azul-borde);padding-left:14px;margin-bottom:14px}
   .pitch-label{font-size:12px;font-weight:600;color:var(--azul);text-transform:uppercase;letter-spacing:0.07em;margin-bottom:5px}
-  .pitch-starter{font-size:12px;color:var(--gris-med);font-style:italic;margin-bottom:6px}
 
-  /* INTEGRATION TABLE */
   .int-header{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:6px}
   .int-header span{font-size:11px;font-weight:600;color:var(--gris-med);text-transform:uppercase;letter-spacing:0.06em}
   .int-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:8px}
   .int-idea-name{padding:9px 12px;font-size:13px;font-weight:500;color:var(--gris-med);background:var(--gris-claro);border:1px solid var(--gris-borde);border-radius:var(--radio)}
 
-  /* AUTOEVALUACION */
   .ae-row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--gris-borde)}
   .ae-row:last-child{border-bottom:none}
   .ae-label{font-size:13px;color:var(--gris-oscuro)}
@@ -140,60 +121,36 @@
   .star{font-size:20px;cursor:pointer;color:var(--gris-borde);transition:color 0.1s;user-select:none}
   .star.on{color:#EF9F27}
 
-  /* NAVIGATION */
   .nav-row{display:flex;justify-content:space-between;align-items:center;margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--gris-borde)}
   .btn{padding:8px 20px;border-radius:var(--radio);font-size:13px;font-weight:500;cursor:pointer;border:1px solid var(--gris-borde);background:var(--blanco);color:var(--gris-oscuro);font-family:inherit;transition:all 0.15s}
   .btn:hover{background:var(--gris-claro);border-color:var(--gris-med)}
   .btn-primary{background:var(--azul);color:#fff;border-color:var(--azul)}
   .btn-primary:hover{background:var(--azul-med)}
   .btn-primary:disabled{background:#ccc;border-color:#ccc;cursor:not-allowed;opacity:0.6}
-  .btn-ghost{background:none;border:none;color:var(--gris-med);cursor:pointer;font-size:13px;font-family:inherit;padding:8px 4px}
-  .btn-ghost:hover{color:var(--gris-oscuro)}
-  .btn-tutor{background:var(--purpura-claro);color:var(--purpura);border-color:var(--purpura-borde);font-weight:500}
-  .btn-tutor:hover{background:var(--purpura-borde)}
   .btn-secondary{background:var(--verde-claro);color:var(--verde);border-color:var(--verde-borde);font-weight:500}
   .btn-secondary:hover{background:var(--verde-borde)}
 
-  /* ALERTS */
   .alert{padding:10px 14px;border-radius:var(--radio);font-size:13px;margin-bottom:12px;line-height:1.5}
   .alert-info{background:var(--azul-claro);border:1px solid var(--azul-borde);color:var(--azul-med)}
   .alert-warning{background:var(--ambar-claro);border:1px solid var(--ambar-borde);color:var(--ambar)}
-  .alert-error{background:var(--rojo-claro);border:1px solid var(--rojo-borde);color:var(--rojo)}
-  .alert-success{background:var(--verde-claro);border:1px solid var(--verde-borde);color:var(--verde)}
 
-  /* DIVIDER */
   .divider{border:none;border-top:1px solid var(--gris-borde);margin:1.25rem 0}
 
-  /* EJEMPLO COLAPSABLE */
   .ejemplo-toggle{display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:500;color:var(--azul-med);padding:8px 12px;background:var(--azul-claro);border:1px solid var(--azul-borde);border-radius:var(--radio);width:100%}
   .ejemplo-toggle:hover{background:#d8eaf8}
   .ejemplo-arrow{transition:transform 0.2s;font-size:10px;margin-left:auto}
   .ejemplo-toggle.open .ejemplo-arrow{transform:rotate(90deg)}
-  .ejemplo-box{display:none;background:var(--azul-claro);border:1px solid var(--azul-borde);border-top:none;border-radius:0 0 var(--radio) var(--radio);padding:14px 14px 10px;margin-bottom:14px;font-size:12px;color:var(--gris-oscuro)}
+  .ejemplo-box{display:none;background:var(--azul-claro);border:1px solid var(--azul-borde);border-top:none;border-radius:0 0 var(--radio) var(--radio);padding:14px;margin-bottom:14px;font-size:12px;color:var(--gris-oscuro)}
   .ejemplo-box.open{display:block}
   .ej-table{width:100%;border-collapse:collapse;font-size:12px;margin:10px 0}
   .ej-table th{background:var(--azul);color:#fff;padding:6px 10px;font-weight:500;text-align:left}
   .ej-table td{padding:6px 10px;border-bottom:1px solid var(--azul-borde)}
-  .ej-table tr:last-child td{border-bottom:none;font-weight:600;background:#d8eaf8}
-  .ej-formula{background:#fff;border:1px solid var(--azul-borde);border-radius:6px;padding:8px 12px;font-size:12px;margin-top:8px;color:var(--azul);font-family:monospace}
 
-  /* MOBILE: tarjetas de evaluación en lugar de tabla */
-  .eval-card{display:none;background:var(--blanco);border:1px solid var(--gris-borde);border-radius:var(--radio-lg);margin-bottom:10px;overflow:hidden}
-  .eval-card-header{padding:10px 14px;font-size:14px;font-weight:600;border-bottom:1px solid var(--gris-borde);display:flex;align-items:center;gap:8px}
-  .eval-card-body{padding:10px 14px}
-  .eval-card-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid var(--gris-borde)}
-  .eval-card-row:last-child{border-bottom:none}
-  .eval-card-crit{font-size:12px;color:var(--gris-oscuro);flex:1;line-height:1.4}
-  .eval-card-peso{font-size:11px;color:var(--gris-med);white-space:nowrap}
-  .eval-card-footer{padding:8px 14px;background:var(--gris-claro);display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--gris-borde)}
-  .eval-card-footer-label{font-size:12px;color:var(--gris-med)}
-  .eval-card-final{font-size:18px;font-weight:700;color:var(--azul)}
-
-  /* MODAL/NOTIFICATION */
   .toast{position:fixed;bottom:20px;right:20px;background:#fff;border-radius:8px;padding:12px 16px;box-shadow:0 4px 12px rgba(0,0,0,0.15);font-size:13px;max-width:300px;animation:slideIn 0.3s ease;z-index:1000}
   .toast.success{border-left:4px solid var(--verde);color:var(--verde)}
   .toast.error{border-left:4px solid var(--rojo);color:var(--rojo)}
   .toast.info{border-left:4px solid var(--azul);color:var(--azul)}
+  .toast.warning{border-left:4px solid var(--ambar);color:var(--ambar)}
   @keyframes slideIn{from{transform:translateX(400px);opacity:0}to{transform:translateX(0);opacity:1}}
 
   @media(max-width:640px){
@@ -204,20 +161,10 @@
     .int-header{display:none}
     .int-row{grid-template-columns:1fr;gap:6px;padding:10px;background:var(--gris-claro);border-radius:var(--radio);border:1px solid var(--gris-borde);margin-bottom:8px}
     .header{flex-direction:column;gap:1rem;padding:1.25rem 1rem 0.75rem}
-    .header-actions{width:100%}
     .header-title{font-size:18px}
     .stepper{padding:0 0.5rem}
     .step-btn{min-width:52px;padding:10px 4px 8px;font-size:10px}
-    .step-num{font-size:14px}
     .eval-table-wrap{display:none}
-    .eval-card{display:block}
-    .result-label{width:auto;font-size:12px}
-    .result-row{flex-wrap:wrap;gap:6px}
-    .result-bar-bg{width:100%;order:3}
-    .ae-row{flex-direction:column;align-items:flex-start;gap:6px}
-    .nav-row .btn{padding:9px 14px;font-size:13px}
-    .pitch-block{padding-left:10px}
-    .crit-selected-item{grid-template-columns:1fr 64px 24px}
   }
 </style>
 </head>
@@ -227,7 +174,7 @@
   <div class="header-content">
     <div class="header-eyebrow">Herramienta de apoyo al proceso creativo</div>
     <div class="header-title">Matriz de Viabilidad Corporativa</div>
-    <div class="header-sub">De la divergencia a la convergencia · Selección de soluciones organizacionales</div>
+    <div class="header-sub">De la divergencia a la convergencia · Selección de soluciones</div>
   </div>
   <div class="header-actions">
     <span class="status-indicator" id="save-status">Sin guardar</span>
@@ -245,68 +192,49 @@
 </div>
 
 <div class="main">
-
-<!-- ===== PASO 1 ===== -->
 <div class="panel active" id="panel1">
   <div class="card">
     <div class="card-title">Definición del reto creativo</div>
-    <div class="card-desc">Antes de evaluar ideas, el equipo debe tener absoluta claridad sobre qué problema está resolviendo y qué resultado espera. Estas definiciones serán la brújula para toda la evaluación.</div>
     <div class="field">
-      <label class="lbl required">Problema / desafío organizacional</label>
-      <textarea id="problema" placeholder="Describe el problema central que el equipo debe resolver. ¿Qué está fallando, generando costos, o limitando el desempeño de la organización?" oninput="autoSave()"></textarea>
-      <div class="field-error">Este campo es obligatorio</div>
+      <label class="lbl required">Problema organizacional</label>
+      <textarea id="problema" placeholder="Describe el problema central..." oninput="autoSave()"></textarea>
+      <div class="field-error">Requerido</div>
     </div>
     <div class="field">
       <label class="lbl required">Objetivo de la solución</label>
-      <textarea id="objetivo" placeholder="¿Qué resultado concreto y observable esperamos lograr con la solución?" oninput="autoSave()"></textarea>
-      <div class="field-error">Este campo es obligatorio</div>
+      <textarea id="objetivo" placeholder="¿Qué resultado esperamos?" oninput="autoSave()"></textarea>
+      <div class="field-error">Requerido</div>
     </div>
     <hr class="divider">
-    <div class="card-title" style="margin-bottom:4px">Ideas finalistas</div>
-    <div class="card-desc">Registra las 3 ideas que el equipo ha seleccionado tras la fase divergente para ser evaluadas.</div>
+    <div class="card-title">Ideas finalistas</div>
     <div class="grid3">
       <div class="field">
         <label class="lbl"><span class="idea-badge badge-a">A</span> Idea</label>
-        <input type="text" id="ideaA" placeholder="Nombre o descripción breve" oninput="autoSave()">
-        <div class="field-error">Este campo es obligatorio</div>
+        <input type="text" id="ideaA" placeholder="Nombre breve" oninput="autoSave()">
       </div>
       <div class="field">
         <label class="lbl"><span class="idea-badge badge-b">B</span> Idea</label>
-        <input type="text" id="ideaB" placeholder="Nombre o descripción breve" oninput="autoSave()">
-        <div class="field-error">Este campo es obligatorio</div>
+        <input type="text" id="ideaB" placeholder="Nombre breve" oninput="autoSave()">
       </div>
       <div class="field">
         <label class="lbl"><span class="idea-badge badge-c">C</span> Idea</label>
-        <input type="text" id="ideaC" placeholder="Nombre o descripción breve" oninput="autoSave()">
-        <div class="field-error">Este campo es obligatorio</div>
+        <input type="text" id="ideaC" placeholder="Nombre breve" oninput="autoSave()">
       </div>
     </div>
   </div>
   <div class="nav-row"><span></span><button class="btn btn-primary" onclick="validarYavanzar(1,2)">Siguiente →</button></div>
 </div>
 
-<!-- ===== PASO 2 ===== -->
 <div class="panel" id="panel2">
   <div class="card">
-    <div class="card-title">Definición de criterios de evaluación</div>
-    <div class="card-desc">Selecciona entre 2 y 4 criterios del catálogo. Elige los más relevantes para el contexto del reto. Luego asigna un peso porcentual a cada uno: el total debe sumar exactamente 100%.</div>
-
-    <div class="alert alert-info">
-      <strong style="font-weight:600">¿Cómo elegir criterios?</strong>
-      Piensa en lo que la organización más valora para tomar esta decisión. ¿Es más importante que la solución sea rápida de implementar, o que genere alto impacto? ¿Hay restricciones de presupuesto o de tiempo?
-    </div>
-
-    <div class="card-title" style="font-size:13px;color:var(--gris-med);font-weight:500;margin-bottom:10px">Catálogo de criterios organizacionales — selecciona los que apliquen</div>
+    <div class="card-title">Criterios de evaluación</div>
+    <div class="alert alert-info">Selecciona 2-4 criterios y asigna pesos que sumen 100%</div>
     <div class="crit-catalog" id="crit-catalog"></div>
-
     <div id="selected-section" style="display:none">
       <hr class="divider">
-      <div class="card-title" style="font-size:13px;margin-bottom:4px">Criterios seleccionados · Asigna el peso (%)</div>
-      <div class="card-desc" style="margin-bottom:10px">El peso refleja qué tan determinante es cada criterio en la decisión final. Un criterio con 40% influye el doble que uno con 20%.</div>
+      <div class="card-title">Criterios seleccionados - Pesos</div>
       <div class="crit-selected-list" id="crit-selected-list"></div>
-      <div style="overflow:hidden;margin-top:4px">
-        <span id="peso-feedback" class="peso-feedback peso-err">Total: 0%</span>
-      </div>
+      <span id="peso-feedback" class="peso-feedback peso-err">Total: 0%</span>
     </div>
   </div>
   <div class="nav-row">
@@ -315,88 +243,26 @@
   </div>
 </div>
 
-<!-- ===== PASO 3 ===== -->
 <div class="panel" id="panel3">
   <div class="card">
-    <div class="card-title">Evaluación ponderada de ideas</div>
-
-    <div class="eval-intro">
-      <strong>¿Qué significa evaluar con criterios ponderados?</strong>
-      Cada idea recibe una puntuación del 1 al 5 en cada criterio. Esa puntuación se multiplica por el peso del criterio (su importancia relativa). El puntaje final es la suma de esos productos: representa el desempeño global de la idea.
-      <br><br>
-      El objetivo <strong>no es elegir la idea "más simpática" o la primera que se propuso</strong>, sino identificar cuál tiene el mejor desempeño global considerando lo que más importa.
-    </div>
-
-    <!-- EJEMPLO COLAPSABLE -->
-    <button class="ejemplo-toggle" id="ejemplo-btn" onclick="toggleEjemplo()">
-      ▶ <span class="ejemplo-arrow">▶</span> Ver ejemplo resuelto — ¿cómo se calcula el puntaje final?
-    </button>
+    <div class="card-title">Evaluación ponderada</div>
+    <div class="eval-intro">Cada idea recibe 1-5 en cada criterio, multiplicado por su peso.</div>
+    <button class="ejemplo-toggle" id="ejemplo-btn" onclick="toggleEjemplo()">▶ <span class="ejemplo-arrow">▶</span> Ver ejemplo</button>
     <div class="ejemplo-box" id="ejemplo-box">
-      <p style="margin-bottom:8px"><strong>Contexto:</strong> Un equipo evalúa 3 ideas para reducir la rotación de personal. Eligieron 3 criterios con estos pesos:</p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
-        <span style="background:#fff;border:1px solid var(--azul-borde);border-radius:20px;padding:3px 10px;font-size:12px"><strong>Impacto</strong> · 50%</span>
-        <span style="background:#fff;border:1px solid var(--azul-borde);border-radius:20px;padding:3px 10px;font-size:12px"><strong>Viabilidad</strong> · 30%</span>
-        <span style="background:#fff;border:1px solid var(--azul-borde);border-radius:20px;padding:3px 10px;font-size:12px"><strong>Costo</strong> · 20%</span>
-      </div>
+      <p>Criterios: Impacto (50%), Viabilidad (30%), Costo (20%)</p>
       <table class="ej-table">
-        <thead>
-          <tr>
-            <th>Idea</th>
-            <th>Impacto (×0.50)</th>
-            <th>Viabilidad (×0.30)</th>
-            <th>Costo (×0.20)</th>
-            <th>Puntaje final</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span class="idea-badge badge-a">A</span> Mentoría interna</td>
-            <td>4 → 2.00</td><td>5 → 1.50</td><td>5 → 1.00</td><td><strong>4.50</strong></td>
-          </tr>
-          <tr>
-            <td><span class="idea-badge badge-b">B</span> Bono de permanencia</td>
-            <td>3 → 1.50</td><td>4 → 1.20</td><td>2 → 0.40</td><td><strong>3.10</strong></td>
-          </tr>
-          <tr>
-            <td><span class="idea-badge badge-c">C</span> Rediseño de turnos</td>
-            <td>5 → 2.50</td><td>2 → 0.60</td><td>4 → 0.80</td><td><strong>3.90</strong> ← ganadora por impacto</td>
-          </tr>
-          <tr>
-            <td colspan="4" style="color:var(--azul-med);font-size:12px">Fórmula: Puntaje final = (nota × peso) de cada criterio, sumados</td>
-            <td></td>
-          </tr>
-        </tbody>
+        <tr><th>Idea</th><th>Impacto</th><th>Viabilidad</th><th>Costo</th><th>Total</th></tr>
+        <tr><td>A</td><td>4 → 2.00</td><td>5 → 1.50</td><td>5 → 1.00</td><td><strong>4.50</strong></td></tr>
       </table>
-      <div class="ej-formula">Idea A = (4×0.50) + (5×0.30) + (5×0.20) = 2.00 + 1.50 + 1.00 = <strong>4.50</strong></div>
-      <p style="margin-top:10px;font-size:12px;color:var(--gris-med)">Nota: la Idea C punteó 5 en impacto, pero su baja viabilidad (2) redujo su puntaje final. Eso es exactamente lo que la ponderación permite identificar: soluciones realmente balanceadas.</p>
     </div>
-
-    <div class="card-title" style="font-size:13px;color:var(--gris-med);font-weight:500;margin-bottom:8px;margin-top:14px">Escala de puntuación</div>
     <div class="scale-legend">
-      <span class="scale-chip sc1">1 · Muy bajo</span>
-      <span class="scale-chip sc2">2 · Bajo</span>
-      <span class="scale-chip sc3">3 · Medio</span>
-      <span class="scale-chip sc4">4 · Alto</span>
-      <span class="scale-chip sc5">5 · Muy alto</span>
+      <span class="scale-chip sc1">1 Muy bajo</span><span class="scale-chip sc2">2 Bajo</span><span class="scale-chip sc3">3 Medio</span>
+      <span class="scale-chip sc4">4 Alto</span><span class="scale-chip sc5">5 Muy alto</span>
     </div>
-
-    <div class="alert alert-warning" style="margin-bottom:14px">
-      <strong style="font-weight:600;color:var(--gris-oscuro)">Antes de puntuar, el equipo debe discutir cada celda.</strong>
-      No asignen puntajes individualmente y promedien. Lleguen a un acuerdo argumentado: ¿por qué esta idea merece un 4 en viabilidad y no un 3? La negociación del puntaje es parte del aprendizaje.
-    </div>
-
-    <!-- TABLA (desktop) -->
     <div class="eval-table-wrap" style="overflow-x:auto">
-      <table class="eval-table" id="eval-table">
-        <thead><tr id="eval-thead"></tr></thead>
-        <tbody id="eval-tbody"></tbody>
-      </table>
+      <table class="eval-table" id="eval-table"><thead><tr id="eval-thead"></tr></thead><tbody id="eval-tbody"></tbody></table>
     </div>
-
-    <!-- TARJETAS (móvil) -->
-    <div id="eval-cards"></div>
-
-    <div id="resultado-visual" style="margin-top:16px"></div>
+    <div id="resultado-visual"></div>
   </div>
   <div class="nav-row">
     <button class="btn" onclick="goStep(2)">← Anterior</button>
@@ -404,30 +270,28 @@
   </div>
 </div>
 
-<!-- ===== PASO 4 ===== -->
 <div class="panel" id="panel4">
   <div class="card">
-    <div class="card-title">Análisis cualitativo de la decisión</div>
-    <div class="card-desc">La matriz orientó la decisión, pero no la reemplaza. Aquí el equipo justifica por qué la idea elegida es la más adecuada en términos de valor, viabilidad y pertinencia al contexto.</div>
+    <div class="card-title">Decisión cualitativa</div>
     <div class="field">
       <label class="lbl required">Idea seleccionada</label>
-      <input type="text" id="seleccionada" placeholder="Nombre de la idea que el equipo ha decidido defender" oninput="autoSave()">
-      <div class="field-error">Este campo es obligatorio</div>
+      <input type="text" id="seleccionada" placeholder="Nombre" oninput="autoSave()">
+      <div class="field-error">Requerido</div>
     </div>
     <div class="field">
       <label class="lbl required">Genera valor porque…</label>
-      <textarea id="valor" placeholder="¿Qué beneficio concreto y observable aporta esta solución a la organización o a las personas involucradas?" oninput="autoSave()"></textarea>
-      <div class="field-error">Este campo es obligatorio</div>
+      <textarea id="valor" placeholder="Beneficios" oninput="autoSave()"></textarea>
+      <div class="field-error">Requerido</div>
     </div>
     <div class="field">
       <label class="lbl required">Es viable porque…</label>
-      <textarea id="viable" placeholder="¿Por qué es factible implementarla? Considera recursos disponibles, tiempo, capacidades del equipo y soporte organizacional." oninput="autoSave()"></textarea>
-      <div class="field-error">Este campo es obligatorio</div>
+      <textarea id="viable" placeholder="Factibilidad" oninput="autoSave()"></textarea>
+      <div class="field-error">Requerido</div>
     </div>
     <div class="field">
       <label class="lbl required">Responde al problema porque…</label>
-      <textarea id="responde" placeholder="¿Cómo aborda directamente el reto definido en el paso 1? ¿Ataca la causa raíz o solo los síntomas?" oninput="autoSave()"></textarea>
-      <div class="field-error">Este campo es obligatorio</div>
+      <textarea id="responde" placeholder="Conexión" oninput="autoSave()"></textarea>
+      <div class="field-error">Requerido</div>
     </div>
   </div>
   <div class="nav-row">
@@ -436,16 +300,10 @@
   </div>
 </div>
 
-<!-- ===== PASO 5 ===== -->
 <div class="panel" id="panel5">
   <div class="card">
     <div class="card-title">Integración creativa</div>
-    <div class="card-desc">Descartar una idea no significa que no tenga valor. Antes de cerrar la fase divergente, identifica qué elementos de las ideas no elegidas podrían enriquecer la solución seleccionada.</div>
-    <div class="int-header">
-      <span>Idea descartada</span>
-      <span>Elemento valioso a rescatar</span>
-      <span>Cómo podría integrarse</span>
-    </div>
+    <div class="int-header"><span>Idea</span><span>Elemento</span><span>Integración</span></div>
     <div id="integracion-wrap"></div>
   </div>
   <div class="nav-row">
@@ -454,99 +312,74 @@
   </div>
 </div>
 
-<!-- ===== PASO 6 ===== -->
 <div class="panel" id="panel6">
   <div class="card">
-    <div class="card-title">Pitch ejecutivo <span style="font-size:12px;font-weight:400;color:var(--gris-med);margin-left:6px">2 minutos · estructura argumentativa</span></div>
-    <div class="card-desc">Preparen la presentación de su propuesta. Cada sección corresponde a un bloque argumentativo del pitch. La claridad y precisión son más importantes que la extensión.</div>
-
+    <div class="card-title">Pitch ejecutivo</div>
     <div class="pitch-block">
       <div class="pitch-label">① Problema</div>
-      <div class="pitch-starter">"Actualmente la organización enfrenta…"</div>
-      <textarea id="p-problema" placeholder="Enuncia el problema con datos o evidencias concretas. Evita generalizaciones." oninput="autoSave()"></textarea>
+      <textarea id="p-problema" placeholder="Enuncia el problema" oninput="autoSave()"></textarea>
     </div>
     <div class="pitch-block">
       <div class="pitch-label">② Solución</div>
-      <div class="pitch-starter">"Proponemos implementar…"</div>
-      <textarea id="p-solucion" placeholder="Describe la propuesta de forma precisa. ¿Qué es, cómo funciona, quiénes están involucrados?" oninput="autoSave()"></textarea>
+      <textarea id="p-solucion" placeholder="Describe la propuesta" oninput="autoSave()"></textarea>
     </div>
     <div class="pitch-block">
-      <div class="pitch-label">③ Valor generado</div>
-      <div class="pitch-starter">"Esta solución permitirá…"</div>
-      <textarea id="p-valor" placeholder="Menciona beneficios medibles o verificables. Conecta con los criterios que obtuvieron mayor puntaje." oninput="autoSave()"></textarea>
+      <div class="pitch-label">③ Valor</div>
+      <textarea id="p-valor" placeholder="Beneficios medibles" oninput="autoSave()"></textarea>
     </div>
     <div class="pitch-block">
-      <div class="pitch-label">④ Riesgo principal y respuesta</div>
-      <div class="pitch-starter">"El principal desafío será… y lo enfrentaremos mediante…"</div>
-      <textarea id="p-riesgo" placeholder="Identificar un riesgo real y proponer cómo gestionarlo demuestra madurez analítica." oninput="autoSave()"></textarea>
+      <div class="pitch-label">④ Riesgo</div>
+      <textarea id="p-riesgo" placeholder="Riesgo y solución" oninput="autoSave()"></textarea>
     </div>
-
     <hr class="divider">
-    <div class="card-title" style="margin-bottom:6px">Reflexión final del equipo</div>
-    <div class="card-desc">Esta pregunta es central para el aprendizaje del proceso.</div>
-    <div class="field">
-      <label class="lbl">¿Qué aprendimos sobre la diferencia entre una idea creativa y una solución organizacionalmente viable?</label>
-      <textarea id="reflexion" style="min-height:80px" placeholder="Reflexión colectiva sobre el proceso vivido..." oninput="autoSave()"></textarea>
-    </div>
-
+    <div class="card-title">Reflexión final</div>
+    <textarea id="reflexion" style="min-height:80px" placeholder="Aprendizajes..." oninput="autoSave()"></textarea>
     <hr class="divider">
-    <div class="card-title" style="margin-bottom:6px">Autoevaluación de competencias ejecutivas</div>
-    <div class="card-desc">El equipo califica su desempeño en las competencias que este proceso pone en juego.</div>
+    <div class="card-title">Autoevaluación</div>
     <div id="autoeval-wrap"></div>
   </div>
   <div class="nav-row">
     <button class="btn" onclick="goStep(5)">← Anterior</button>
-    <button class="btn btn-secondary" onclick="exportarPDF()" style="margin-right:8px">📄 Exportar PDF</button>
-    <button class="btn btn-primary" onclick="exportarResumen()">📥 Exportar TXT</button>
+    <button class="btn btn-secondary" onclick="exportarPDF()">📄 PDF</button>
+    <button class="btn btn-primary" onclick="exportarResumen()">📥 TXT</button>
   </div>
 </div>
-
-</div><!-- /main -->
+</div>
 
 <script>
-// ===== CONSTANTES =====
 const CRITERIOS_CATALOGO = [
-  {id:'impacto',   nombre:'Impacto en resultados',   desc:'Grado en que la solución mejora indicadores clave del negocio (productividad, ingresos, satisfacción del cliente).', q:'¿En qué medida mejora esta idea nuestros KPIs?'},
-  {id:'viabilidad',nombre:'Viabilidad de implementación', desc:'Factibilidad real de ejecutar la solución con los recursos, capacidades y tiempo disponibles en la organización.', q:'¿Es posible implementarla con lo que tenemos?'},
-  {id:'costo',     nombre:'Eficiencia de costos',    desc:'Relación entre la inversión requerida (económica, humana, tecnológica) y el valor generado.', q:'¿La inversión que requiere esta idea se justifica?'},
-  {id:'aceptacion',nombre:'Aceptación organizacional', desc:'Nivel de resistencia o apertura esperada por parte de los colaboradores, líderes y cultura de la organización.', q:'¿Las personas de la organización la apoyan?'},
-  {id:'tiempo',    nombre:'Velocidad de implementación', desc:'Rapidez con la que la solución puede estar operativa y generando resultados tangibles.', q:'¿Esta idea puede implementarse y mostrar resultados rápido?'},
-  {id:'innovacion',nombre:'Potencial innovador',     desc:'Nivel de novedad, diferenciación y capacidad de la idea para generar ventaja competitiva o transformación.', q:'¿Esta idea representa un cambio significativo?'},
-  {id:'riesgo',    nombre:'Gestión del riesgo',      desc:'Nivel de incertidumbre, probabilidad de fracaso o consecuencias negativas asociadas a la implementación.', q:'¿El nivel de riesgo que implica es aceptable?'},
-  {id:'sostenibilidad',nombre:'Sostenibilidad',      desc:'Capacidad de la solución para mantenerse en el tiempo sin depender de esfuerzos extraordinarios o recursos externos.', q:'¿Esta solución puede mantenerse en el tiempo?'},
+  {id:'impacto',nombre:'Impacto en resultados',desc:'Mejora KPIs clave'},
+  {id:'viabilidad',nombre:'Viabilidad',desc:'Factible con recursos'},
+  {id:'costo',nombre:'Eficiencia de costos',desc:'Inversión justificada'},
+  {id:'aceptacion',nombre:'Aceptación organizacional',desc:'Apoyo de personas'},
+  {id:'tiempo',nombre:'Velocidad',desc:'Rápida implementación'},
+  {id:'innovacion',nombre:'Innovación',desc:'Novedad y diferenciación'},
+  {id:'riesgo',nombre:'Gestión del riesgo',desc:'Riesgo aceptable'},
+  {id:'sostenibilidad',nombre:'Sostenibilidad',desc:'Mantiene en el tiempo'}
 ];
 
 const AUTOEVALS = [
-  {id:'ae-analisis',  label:'Análisis de criterios', desc:'Capacidad de identificar y ponderar factores relevantes para la decisión'},
-  {id:'ae-decision',  label:'Calidad de la decisión', desc:'Rigor y coherencia del proceso de selección de la idea'},
-  {id:'ae-estrategia',label:'Pensamiento estratégico', desc:'Visión de las implicaciones organizacionales de la propuesta'},
-  {id:'ae-pitch',     label:'Capacidad de pitch', desc:'Claridad, estructura y poder de persuasión en la presentación'},
-  {id:'ae-colaboracion',label:'Trabajo en equipo', desc:'Calidad del proceso colaborativo y gestión de desacuerdos'},
+  {id:'ae-analisis',label:'Análisis de criterios'},
+  {id:'ae-decision',label:'Calidad de decisión'},
+  {id:'ae-estrategia',label:'Pensamiento estratégico'},
+  {id:'ae-pitch',label:'Capacidad de pitch'},
+  {id:'ae-colaboracion',label:'Trabajo en equipo'}
 ];
 
-const IDEAS = ['A','B','C'];
-const BAR_COLS = ['bar-col-a','bar-col-b','bar-col-c'];
-const BADGE_CLS = ['badge-a','badge-b','badge-c'];
-
-// ===== ESTADO =====
-let selectedCrits = [];
-let currentStep = 1;
-let autoSaveTimeout;
+let selectedCrits = [], currentStep = 1, autoSaveTimeout;
 const STORAGE_KEY = 'matriz_viabilidad_data';
+const IDEAS = ['A','B','C'];
 
-// ===== INIT =====
-window.addEventListener('DOMContentLoaded', function(){
+window.addEventListener('DOMContentLoaded', ()=>{
   buildCatalogo();
   buildAutoevals();
   cargarDatos();
 });
 
-// ===== NAVEGACIÓN =====
 function goStep(n){
   document.getElementById('panel'+currentStep).classList.remove('active');
   document.getElementById('panel'+n).classList.add('active');
-  const btns = document.querySelectorAll('.step-btn');
-  btns.forEach((b,i)=>{
+  document.querySelectorAll('.step-btn').forEach((b,i)=>{
     b.classList.remove('active','done');
     if(i+1<n) b.classList.add('done');
     else if(i+1===n) b.classList.add('active');
@@ -557,65 +390,46 @@ function goStep(n){
   window.scrollTo(0,0);
 }
 
-function validarYavanzar(stepActual, stepSiguiente){
-  if(validarPaso(stepActual)){
-    goStep(stepSiguiente);
-  }
+function validarYavanzar(paso, siguiente){
+  if(validarPaso(paso)) goStep(siguiente);
 }
 
-// ===== VALIDACIÓN =====
 function validarPaso(paso){
-  const campos = obtenerCamposObligatorios(paso);
-  let valido = true;
-  
-  campos.forEach(fieldId=>{
-    const el = document.getElementById(fieldId);
-    const valor = (el.value||'').trim();
-    const field = el.closest('.field');
-    
-    if(!valor){
-      field.classList.add('has-error');
-      valido = false;
+  const campos = {1:['problema','objetivo','ideaA','ideaB','ideaC'],4:['seleccionada','valor','viable','responde']}[paso]||[];
+  let ok = true;
+  campos.forEach(id=>{
+    const el = document.getElementById(id);
+    if(!el.value.trim()){
+      el.closest('.field').classList.add('has-error');
+      ok = false;
     } else {
-      field.classList.remove('has-error');
+      el.closest('.field').classList.remove('has-error');
     }
   });
   
-  if(paso === 2){
-    const totalWeight = selectedCrits.reduce((a,c)=>a+(parseFloat(c.peso)||0),0);
-    if(Math.abs(totalWeight - 100) > 0.01){
-      mostrarNotificacion('Los pesos deben sumar exactamente 100%', 'error');
+  if(paso===2){
+    const sum = selectedCrits.reduce((a,c)=>a+(parseFloat(c.peso)||0),0);
+    if(Math.abs(sum-100)>0.01){
+      mostrarNotificacion('Pesos deben sumar 100%','error');
       return false;
     }
-    if(selectedCrits.length < 2){
-      mostrarNotificacion('Debes seleccionar al menos 2 criterios', 'error');
+    if(selectedCrits.length<2){
+      mostrarNotificacion('Mínimo 2 criterios','error');
       return false;
     }
   }
   
-  if(!valido){
-    mostrarNotificacion('Por favor completa todos los campos obligatorios', 'error');
-  }
-  
-  return valido;
+  if(!ok) mostrarNotificacion('Completa campos obligatorios','error');
+  return ok;
 }
 
-function obtenerCamposObligatorios(paso){
-  const campos = {
-    1: ['problema', 'objetivo', 'ideaA', 'ideaB', 'ideaC'],
-    4: ['seleccionada', 'valor', 'viable', 'responde']
-  };
-  return campos[paso] || [];
-}
-
-// ===== CRITERIOS (PASO 2) =====
 function buildCatalogo(){
   const el = document.getElementById('crit-catalog');
   CRITERIOS_CATALOGO.forEach(c=>{
     const div = document.createElement('div');
     div.className='crit-chip';
     div.id='chip-'+c.id;
-    div.innerHTML=`<div class="crit-chip-name">${c.nombre}</div><div class="crit-chip-desc">${c.desc}</div><div class="crit-chip-q">${c.q}</div>`;
+    div.innerHTML=`<div class="crit-chip-name">${c.nombre}</div><div class="crit-chip-desc">${c.desc}</div>`;
     div.onclick=()=>toggleCrit(c);
     el.appendChild(div);
   });
@@ -628,10 +442,10 @@ function toggleCrit(c){
     document.getElementById('chip-'+c.id).classList.remove('selected');
   } else {
     if(selectedCrits.length>=4){
-      mostrarNotificacion('Selecciona máximo 4 criterios.', 'warning');
+      mostrarNotificacion('Máximo 4 criterios','warning');
       return;
     }
-    selectedCrits.push({...c, peso:''});
+    selectedCrits.push({...c,peso:''});
     document.getElementById('chip-'+c.id).classList.add('selected');
   }
   renderSelectedCrits();
@@ -644,14 +458,10 @@ function renderSelectedCrits(){
   list.innerHTML='';
   if(!selectedCrits.length){sec.style.display='none';return;}
   sec.style.display='block';
-  selectedCrits.forEach((c,i)=>{
+  selectedCrits.forEach(c=>{
     const div=document.createElement('div');
     div.className='crit-selected-item';
-    div.innerHTML=`
-      <span class="crit-name-tag">${c.nombre}</span>
-      <input type="number" class="peso-input" id="peso-${c.id}" min="0" max="100" placeholder="%" value="${c.peso}" oninput="updatePeso('${c.id}',this.value)">
-      <button class="crit-remove" onclick="removeCrit('${c.id}')" title="Quitar criterio">✕</button>
-    `;
+    div.innerHTML=`<span class="crit-name-tag">${c.nombre}</span><input type="number" class="peso-input" id="peso-${c.id}" min="0" max="100" value="${c.peso}" oninput="updatePeso('${c.id}',this.value)"><button class="crit-remove" onclick="removeCrit('${c.id}')">✕</button>`;
     list.appendChild(div);
   });
   updatePesoDisplay();
@@ -661,16 +471,14 @@ function updatePeso(id,val){
   const c=selectedCrits.find(x=>x.id===id);
   if(c) c.peso=val;
   updatePesoDisplay();
+  const sum = selectedCrits.reduce((a,c)=>a+(parseFloat(c.peso)||0),0);
+  document.getElementById('btn-step2-next').disabled = Math.abs(sum-100)>0.01;
   autoSave();
-  // Habilitar botón siguiente si pesos están OK
-  const totalWeight = selectedCrits.reduce((a,c)=>a+(parseFloat(c.peso)||0),0);
-  document.getElementById('btn-step2-next').disabled = Math.abs(totalWeight - 100) > 0.01;
 }
 
 function removeCrit(id){
   selectedCrits=selectedCrits.filter(x=>x.id!==id);
-  const chip=document.getElementById('chip-'+id);
-  if(chip) chip.classList.remove('selected');
+  document.getElementById('chip-'+id)?.classList.remove('selected');
   renderSelectedCrits();
   autoSave();
 }
@@ -683,15 +491,11 @@ function updatePesoDisplay(){
   el.className='peso-feedback '+(Math.abs(r-100)<0.01?'peso-ok':'peso-err');
 }
 
-// ===== EJEMPLO =====
 function toggleEjemplo(){
-  const box=document.getElementById('ejemplo-box');
-  const btn=document.getElementById('ejemplo-btn');
-  box.classList.toggle('open');
-  btn.classList.toggle('open');
+  document.getElementById('ejemplo-box').classList.toggle('open');
+  document.getElementById('ejemplo-btn').classList.toggle('open');
 }
 
-// ===== EVALUACIÓN (PASO 3) =====
 function getIdeas(){
   return IDEAS.map(k=>({key:k,nombre:(document.getElementById('idea'+k)?.value||'Idea '+k).trim()||'Idea '+k}));
 }
@@ -702,8 +506,7 @@ function buildEvalTable(){
   thead.innerHTML=''; tbody.innerHTML='';
   if(!selectedCrits.length){
     document.getElementById('eval-table').style.display='none';
-    document.getElementById('eval-cards').innerHTML='';
-    document.getElementById('resultado-visual').innerHTML='<div class="alert alert-warning">Vuelve al paso 2 y selecciona al menos un criterio con peso asignado.</div>';
+    document.getElementById('resultado-visual').innerHTML='<div class="alert alert-warning">Selecciona criterios en paso 2</div>';
     return;
   }
   document.getElementById('eval-table').style.display='table';
@@ -712,23 +515,23 @@ function buildEvalTable(){
   const th0=document.createElement('th');th0.textContent='Ideas';thead.appendChild(th0);
   selectedCrits.forEach(c=>{
     const th=document.createElement('th');
-    const p=parseFloat(c.peso)||0;
-    th.innerHTML=`${c.nombre}<br><span style="font-weight:400;opacity:0.75;font-size:10px">${p}% · ${c.q}</span>`;
+    th.innerHTML=`${c.nombre}<br><span style="font-size:10px">${parseFloat(c.peso)||0}%</span>`;
     thead.appendChild(th);
   });
-  const thf=document.createElement('th');thf.textContent='Puntaje final';thf.style.textAlign='center';thead.appendChild(thf);
+  const thf=document.createElement('th');thf.textContent='Total';thf.style.textAlign='center';thead.appendChild(thf);
 
   ideas.forEach((idea,ii)=>{
     const tr=document.createElement('tr');
     const td0=document.createElement('td');
-    td0.innerHTML=`<span class="idea-badge ${BADGE_CLS[ii]}">${idea.key}</span>${idea.nombre}`;
+    const badges=['badge-a','badge-b','badge-c'];
+    td0.innerHTML=`<span class="idea-badge ${badges[ii]}">${idea.key}</span>${idea.nombre}`;
     tr.appendChild(td0);
     selectedCrits.forEach(c=>{
       const td=document.createElement('td');
       const sel=document.createElement('select');
       sel.className='score-sel';
       sel.id='score-'+idea.key+'-'+c.id;
-      sel.innerHTML='<option value="0">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>';
+      sel.innerHTML='<option value="0">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option>';
       sel.addEventListener('change',()=>{calcScores();autoSave();});
       td.appendChild(sel);
       tr.appendChild(td);
@@ -741,40 +544,7 @@ function buildEvalTable(){
     tbody.appendChild(tr);
   });
 
-  const cardsEl=document.getElementById('eval-cards');
-  cardsEl.innerHTML='';
-  ideas.forEach((idea,ii)=>{
-    const card=document.createElement('div');
-    card.className='eval-card';
-    card.id='ecard-'+idea.key;
-    let bodyHTML='';
-    selectedCrits.forEach(c=>{
-      const p=parseFloat(c.peso)||0;
-      bodyHTML+=`<div class="eval-card-row">
-        <div class="eval-card-crit">${c.nombre} <span class="eval-card-peso">${p}%</span></div>
-        <select class="score-sel" id="mscore-${idea.key}-${c.id}" onchange="syncScore('${idea.key}','${c.id}',this.value)">
-          <option value="0">—</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
-        </select>
-      </div>`;
-    });
-    card.innerHTML=`
-      <div class="eval-card-header"><span class="idea-badge ${BADGE_CLS[ii]}">${idea.key}</span>${idea.nombre}</div>
-      <div class="eval-card-body">${bodyHTML}</div>
-      <div class="eval-card-footer">
-        <span class="eval-card-footer-label">Puntaje ponderado</span>
-        <span class="eval-card-final" id="mfinal-${idea.key}">—</span>
-      </div>`;
-    cardsEl.appendChild(card);
-  });
-
   calcScores();
-}
-
-function syncScore(ideaKey, critId, val){
-  const desktop=document.getElementById('score-'+ideaKey+'-'+critId);
-  if(desktop) desktop.value=val;
-  calcScores();
-  autoSave();
 }
 
 function calcScores(){
@@ -783,19 +553,15 @@ function calcScores(){
   ideas.forEach(idea=>{
     let total=0,allFilled=true;
     selectedCrits.forEach(c=>{
-      const desktopEl=document.getElementById('score-'+idea.key+'-'+c.id);
-      const mobileEl=document.getElementById('mscore-'+idea.key+'-'+c.id);
-      const v=parseFloat((desktopEl||mobileEl)?.value||0);
+      const el=document.getElementById('score-'+idea.key+'-'+c.id);
+      const v=parseFloat(el?.value||0);
       if(!v) allFilled=false;
-      if(desktopEl&&mobileEl&&desktopEl.value!==mobileEl.value) mobileEl.value=desktopEl.value;
       total+=v*(parseFloat(c.peso)||0)/100;
     });
     const r=Math.round(total*100)/100;
     scores[idea.key]=allFilled?r:null;
     const el=document.getElementById('final-'+idea.key);
     if(el) el.textContent=allFilled?r.toFixed(2):'—';
-    const mel=document.getElementById('mfinal-'+idea.key);
-    if(mel) mel.textContent=allFilled?r.toFixed(2):'—';
   });
   renderResultado(scores,ideas);
 }
@@ -805,51 +571,38 @@ function renderResultado(scores,ideas){
   const valid=ideas.filter(i=>scores[i.key]!==null);
   if(!valid.length){el.innerHTML='';return;}
   const maxS=Math.max(...valid.map(i=>scores[i.key]));
-  let html='<div style="border-top:1px solid var(--gris-borde);padding-top:14px"><div style="font-size:12px;font-weight:600;color:var(--gris-med);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:10px">RESULTADOS PONDERADOS</div>';
+  const colors=['bar-col-a','bar-col-b','bar-col-c'];
+  const badges=['badge-a','badge-b','badge-c'];
+  let html='<div style="border-top:1px solid var(--gris-borde);padding-top:14px;margin-top:14px"><div style="font-size:12px;font-weight:600;margin-bottom:10px">RESULTADOS</div>';
   ideas.forEach((idea,ii)=>{
     if(scores[idea.key]===null) return;
     const s=scores[idea.key];
     const pct=Math.round((s/5)*100);
-    const isBest=s===maxS;
-    html+=`<div class="result-row">
-      <div class="result-label"><span class="idea-badge ${BADGE_CLS[ii]}">${idea.key}</span> ${idea.nombre}${isBest?'<span class="winner-badge">Mejor puntaje</span>':''}</div>
-      <div class="result-bar-bg"><div class="result-bar ${BAR_COLS[ii]}" style="width:${pct}%"></div></div>
-      <div class="result-score">${s.toFixed(2)}</div>
-    </div>`;
+    html+=`<div class="result-row"><div class="result-label"><span class="idea-badge ${badges[ii]}">${idea.key}</span>${idea.nombre}${s===maxS?'<span class="winner-badge">✓</span>':''}</div><div class="result-bar-bg"><div class="result-bar ${colors[ii]}" style="width:${pct}%"></div></div><div class="result-score">${s.toFixed(2)}</div></div>`;
   });
   html+='</div>';
   el.innerHTML=html;
 }
 
-// ===== INTEGRACIÓN (PASO 5) =====
 function buildIntegracion(){
   const ideas=getIdeas();
-  const selNombre=(document.getElementById('seleccionada')?.value||'').trim();
-  const desc=ideas.filter(i=>i.nombre!==selNombre||!selNombre);
   const w=document.getElementById('integracion-wrap');
   w.innerHTML='';
-  desc.forEach((idea,i)=>{
+  ideas.forEach((idea,i)=>{
+    const badges=['badge-a','badge-b','badge-c'];
     const row=document.createElement('div');
     row.className='int-row';
-    row.innerHTML=`
-      <div class="int-idea-name"><span class="idea-badge ${BADGE_CLS[IDEAS.indexOf(idea.key)]}">${idea.key}</span> ${idea.nombre}</div>
-      <input type="text" placeholder="¿Qué elemento tiene valor?" id="int-elem-${i}" oninput="autoSave()">
-      <input type="text" placeholder="¿Cómo integrarlo?" id="int-como-${i}" oninput="autoSave()">
-    `;
+    row.innerHTML=`<div class="int-idea-name"><span class="idea-badge ${badges[IDEAS.indexOf(idea.key)]}">${idea.key}</span>${idea.nombre}</div><input type="text" placeholder="Elemento" id="int-elem-${i}" oninput="autoSave()"><input type="text" placeholder="¿Cómo?" id="int-como-${i}" oninput="autoSave()">`;
     w.appendChild(row);
   });
 }
 
-// ===== AUTOEVALUACIÓN (PASO 6) =====
 function buildAutoevals(){
   const w=document.getElementById('autoeval-wrap');
   AUTOEVALS.forEach(ae=>{
     const row=document.createElement('div');
     row.className='ae-row';
-    row.innerHTML=`
-      <div><div class="ae-label">${ae.label}</div><div class="ae-desc">${ae.desc}</div></div>
-      <div class="stars" id="${ae.id}">${[1,2,3,4,5].map(n=>`<span class="star" data-v="${n}" onclick="setStar('${ae.id}',${n})">★</span>`).join('')}</div>
-    `;
+    row.innerHTML=`<div class="ae-label">${ae.label}</div><div class="stars" id="${ae.id}">${[1,2,3,4,5].map(n=>`<span class="star" data-v="${n}" onclick="setStar('${ae.id}',${n})">★</span>`).join('')}</div>`;
     w.appendChild(row);
   });
 }
@@ -861,276 +614,70 @@ function setStar(id,val){
   autoSave();
 }
 
-// ===== EXPORTAR PDF =====
 function exportarPDF(){
-  if(!validarPaso(4)){
-    mostrarNotificacion('Por favor completa el paso 4 antes de exportar', 'error');
-    return;
-  }
-  
-  const element = document.querySelector('.main');
-  const opt = {
-    margin: 10,
-    filename: 'matriz_viabilidad.pdf',
-    image: { type: 'jpeg', quality: 0.98 },
-    html2canvas: { scale: 2 },
-    jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
-  };
-  
-  html2pdf().set(opt).from(element).save();
-  mostrarNotificacion('PDF exportado correctamente', 'success');
+  const element=document.querySelector('.main');
+  html2pdf().set({margin:10,filename:'matriz_viabilidad.pdf',image:{type:'jpeg',quality:0.98},html2canvas:{scale:2},jsPDF:{orientation:'portrait',unit:'mm',format:'a4'}}).from(element).save();
+  mostrarNotificacion('PDF exportado','success');
 }
 
-// ===== EXPORTAR TXT =====
 function exportarResumen(){
   const ideas=getIdeas();
-  const lines=[];
-  lines.push('═'.repeat(60));
-  lines.push('MATRIZ DE VIABILIDAD CORPORATIVA — RESUMEN EJECUTIVO');
-  lines.push('═'.repeat(60));
-  lines.push('');
-  
-  lines.push('PASO 1: RETO CREATIVO');
-  lines.push('─'.repeat(60));
-  lines.push('PROBLEMA:');
-  lines.push((document.getElementById('problema')?.value||'').trim());
-  lines.push('');
-  lines.push('OBJETIVO:');
-  lines.push((document.getElementById('objetivo')?.value||'').trim());
-  lines.push('');
-  
-  lines.push('IDEAS EVALUADAS:');
-  ideas.forEach(i=>lines.push('  ['+i.key+'] '+i.nombre));
-  lines.push('');
-  
-  lines.push('PASO 2: CRITERIOS DE EVALUACIÓN');
-  lines.push('─'.repeat(60));
-  selectedCrits.forEach(c=>lines.push('  • '+c.nombre+' ('.+(parseFloat(c.peso)||0)+'%)'));
-  lines.push('');
-  
-  lines.push('PASO 3: EVALUACIÓN PONDERADA');
-  lines.push('─'.repeat(60));
-  ideas.forEach(idea=>{
-    lines.push('['+idea.key+'] '+idea.nombre);
-    selectedCrits.forEach(c=>{
-      const el=document.getElementById('score-'+idea.key+'-'+c.id);
-      const score = el ? el.value : '—';
-      lines.push('  • '+c.nombre+': '+score);
-    });
-    const finalEl=document.getElementById('final-'+idea.key);
-    lines.push('  → Puntaje final: '+(finalEl ? finalEl.textContent : '—'));
-    lines.push('');
-  });
-  
-  lines.push('PASO 4: DECISIÓN');
-  lines.push('─'.repeat(60));
-  lines.push('IDEA SELECCIONADA: '+(document.getElementById('seleccionada')?.value||''));
-  lines.push('');
-  lines.push('Genera valor porque:');
-  lines.push((document.getElementById('valor')?.value||'').trim());
-  lines.push('');
-  lines.push('Es viable porque:');
-  lines.push((document.getElementById('viable')?.value||'').trim());
-  lines.push('');
-  lines.push('Responde al problema porque:');
-  lines.push((document.getElementById('responde')?.value||'').trim());
-  lines.push('');
-  
-  lines.push('PASO 5: INTEGRACIÓN CREATIVA');
-  lines.push('─'.repeat(60));
-  const ideas_desc = ideas.filter(i=>i.nombre!==(document.getElementById('seleccionada')?.value||''));
-  ideas_desc.forEach((idea,i)=>{
-    const elem = document.getElementById('int-elem-'+i)?.value || '';
-    const como = document.getElementById('int-como-'+i)?.value || '';
-    if(elem || como){
-      lines.push('['+idea.key+'] '+idea.nombre);
-      if(elem) lines.push('  • Elemento: '+elem);
-      if(como) lines.push('  • Cómo integrarlo: '+como);
-    }
-  });
-  lines.push('');
-  
-  lines.push('PASO 6: PITCH EJECUTIVO');
-  lines.push('─'.repeat(60));
-  lines.push('① PROBLEMA:');
-  lines.push((document.getElementById('p-problema')?.value||'').trim());
-  lines.push('');
-  lines.push('② SOLUCIÓN:');
-  lines.push((document.getElementById('p-solucion')?.value||'').trim());
-  lines.push('');
-  lines.push('③ VALOR GENERADO:');
-  lines.push((document.getElementById('p-valor')?.value||'').trim());
-  lines.push('');
-  lines.push('④ RIESGO PRINCIPAL Y RESPUESTA:');
-  lines.push((document.getElementById('p-riesgo')?.value||'').trim());
-  lines.push('');
-  lines.push('REFLEXIÓN DEL EQUIPO:');
-  lines.push((document.getElementById('reflexion')?.value||'').trim());
-  lines.push('');
-  lines.push('═'.repeat(60));
-  
-  const blob=new Blob([lines.join('\n')],{type:'text/plain;charset=utf-8'});
+  const lines=['MATRIZ DE VIABILIDAD','PROBLEMA: '+(document.getElementById('problema')?.value||''),'IDEA: '+(document.getElementById('seleccionada')?.value||'')];
+  const blob=new Blob([lines.join('\n')],{type:'text/plain'});
   const a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
-  a.download='matriz_viabilidad_'+new Date().toISOString().split('T')[0]+'.txt';
+  a.download='matriz_viabilidad.txt';
   a.click();
-  mostrarNotificacion('Archivo TXT exportado correctamente', 'success');
+  mostrarNotificacion('TXT exportado','success');
 }
 
-// ===== PERSISTENCIA: LOCALSTORAGE =====
 function autoSave(){
   clearTimeout(autoSaveTimeout);
-  autoSaveTimeout = setTimeout(guardarDatos, 500);
-  document.getElementById('save-status').textContent = 'Guardando...';
+  autoSaveTimeout=setTimeout(guardarDatos,500);
+  document.getElementById('save-status').textContent='Guardando...';
 }
 
 function guardarDatos(){
-  const datos = {
-    paso: currentStep,
-    problema: document.getElementById('problema').value,
-    objetivo: document.getElementById('objetivo').value,
-    ideaA: document.getElementById('ideaA').value,
-    ideaB: document.getElementById('ideaB').value,
-    ideaC: document.getElementById('ideaC').value,
-    criterios: selectedCrits,
-    scores: {},
-    seleccionada: document.getElementById('seleccionada')?.value || '',
-    valor: document.getElementById('valor')?.value || '',
-    viable: document.getElementById('viable')?.value || '',
-    responde: document.getElementById('responde')?.value || '',
-    integracion: {},
-    pitch: {
-      problema: document.getElementById('p-problema')?.value || '',
-      solucion: document.getElementById('p-solucion')?.value || '',
-      valor: document.getElementById('p-valor')?.value || '',
-      riesgo: document.getElementById('p-riesgo')?.value || ''
-    },
-    reflexion: document.getElementById('reflexion')?.value || '',
-    autoevals: {}
-  };
-  
-  // Guardar scores
-  IDEAS.forEach(key=>{
-    datos.scores[key] = {};
-    selectedCrits.forEach(c=>{
-      const el = document.getElementById('score-'+key+'-'+c.id);
-      if(el) datos.scores[key][c.id] = el.value;
-    });
-  });
-  
-  // Guardar integración
-  let i = 0;
-  const ideas_desc = getIdeas().filter(i=>i.nombre!==(document.getElementById('seleccionada')?.value||''));
-  ideas_desc.forEach(idea=>{
-    const elem = document.getElementById('int-elem-'+i);
-    const como = document.getElementById('int-como-'+i);
-    datos.integracion[idea.key] = {
-      elemento: elem?.value || '',
-      como: como?.value || ''
-    };
-    i++;
-  });
-  
-  // Guardar autoevaluaciones
-  AUTOEVALS.forEach(ae=>{
-    const stars = document.querySelectorAll('#'+ae.id+' .star.on');
-    datos.autoevals[ae.id] = stars.length;
-  });
-  
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(datos));
-  document.getElementById('save-status').textContent = '✓ Guardado';
-  setTimeout(()=>{
-    if(document.getElementById('save-status').textContent === '✓ Guardado'){
-      document.getElementById('save-status').textContent = 'Sin guardar';
-    }
-  }, 3000);
+  const datos={problema:document.getElementById('problema').value,objetivo:document.getElementById('objetivo').value,ideaA:document.getElementById('ideaA').value,ideaB:document.getElementById('ideaB').value,ideaC:document.getElementById('ideaC').value,criterios:selectedCrits};
+  localStorage.setItem(STORAGE_KEY,JSON.stringify(datos));
+  document.getElementById('save-status').textContent='✓ Guardado';
 }
 
 function cargarDatos(){
-  const stored = localStorage.getItem(STORAGE_KEY);
+  const stored=localStorage.getItem(STORAGE_KEY);
   if(!stored) return;
-  
   try{
-    const datos = JSON.parse(stored);
-    
-    document.getElementById('problema').value = datos.problema || '';
-    document.getElementById('objetivo').value = datos.objetivo || '';
-    document.getElementById('ideaA').value = datos.ideaA || '';
-    document.getElementById('ideaB').value = datos.ideaB || '';
-    document.getElementById('ideaC').value = datos.ideaC || '';
-    
-    // Restaurar criterios
-    if(datos.criterios && datos.criterios.length > 0){
-      selectedCrits = datos.criterios;
+    const datos=JSON.parse(stored);
+    document.getElementById('problema').value=datos.problema||'';
+    document.getElementById('objetivo').value=datos.objetivo||'';
+    document.getElementById('ideaA').value=datos.ideaA||'';
+    document.getElementById('ideaB').value=datos.ideaB||'';
+    document.getElementById('ideaC').value=datos.ideaC||'';
+    if(datos.criterios&&datos.criterios.length>0){
+      selectedCrits=datos.criterios;
       datos.criterios.forEach(c=>{
-        const chip = document.getElementById('chip-'+c.id);
+        const chip=document.getElementById('chip-'+c.id);
         if(chip) chip.classList.add('selected');
       });
       renderSelectedCrits();
     }
-    
-    // Restaurar otros campos
-    document.getElementById('seleccionada').value = datos.seleccionada || '';
-    document.getElementById('valor').value = datos.valor || '';
-    document.getElementById('viable').value = datos.viable || '';
-    document.getElementById('responde').value = datos.responde || '';
-    
-    if(datos.pitch){
-      document.getElementById('p-problema').value = datos.pitch.problema || '';
-      document.getElementById('p-solucion').value = datos.pitch.solucion || '';
-      document.getElementById('p-valor').value = datos.pitch.valor || '';
-      document.getElementById('p-riesgo').value = datos.pitch.riesgo || '';
-    }
-    
-    document.getElementById('reflexion').value = datos.reflexion || '';
-    
-    // Restaurar scores
-    if(datos.scores){
-      setTimeout(()=>{
-        IDEAS.forEach(key=>{
-          selectedCrits.forEach(c=>{
-            const el = document.getElementById('score-'+key+'-'+c.id);
-            if(el && datos.scores[key] && datos.scores[key][c.id]){
-              el.value = datos.scores[key][c.id];
-            }
-          });
-        });
-      }, 100);
-    }
-    
-    // Restaurar autoevaluaciones
-    if(datos.autoevals){
-      Object.keys(datos.autoevals).forEach(aeId=>{
-        const val = datos.autoevals[aeId];
-        if(val > 0){
-          const stars = document.querySelectorAll('#'+aeId+' .star');
-          stars.forEach((s,i)=>{
-            if(i < val) s.classList.add('on');
-          });
-        }
-      });
-    }
-    
-    mostrarNotificacion('Datos restaurados desde guardado anterior', 'info');
-  } catch(e){
-    console.error('Error cargando datos:', e);
-  }
+    mostrarNotificacion('Datos restaurados','info');
+  }catch(e){console.error(e);}
 }
 
 function resetFormulario(){
-  if(confirm('¿Estás seguro de que deseas limpiar todos los datos? Esta acción no se puede deshacer.')){
+  if(confirm('¿Limpiar todos los datos?')){
     localStorage.removeItem(STORAGE_KEY);
     location.reload();
   }
 }
 
-// ===== NOTIFICACIONES =====
-function mostrarNotificacion(msg, tipo='info'){
-  const toast = document.createElement('div');
-  toast.className = 'toast '+tipo;
-  toast.textContent = msg;
+function mostrarNotificacion(msg,tipo='info'){
+  const toast=document.createElement('div');
+  toast.className='toast '+tipo;
+  toast.textContent=msg;
   document.body.appendChild(toast);
-  setTimeout(()=>toast.remove(), 3000);
+  setTimeout(()=>toast.remove(),3000);
 }
 </script>
 </body>
